@@ -99,6 +99,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9dba63349ff6e6c4c94d5309508e2f4b, type: 3}
   m_PrefabInstance: {fileID: 2049774789912397612}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &6032044622541395503
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203352384777665149}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &8430294377590112429
 Animator:
   serializedVersion: 4
@@ -133,17 +147,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   anim: {fileID: 8430294377590112429}
---- !u!136 &6032044622541395503
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1203352384777665149}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  forceAmount: 0
+  rb: {fileID: 0}
