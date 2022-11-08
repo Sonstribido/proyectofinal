@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 56974
+  controlID: 79357
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,10 +223,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 24.857147}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 78f6ffff
       m_LastClickedID: -2440
-      m_ExpandedIDs: 1eb1fbff76c6fbff6cdafbff6edafbff14e5ffff72e5ffff64f2fffff8f2ffff02f3ffff52f3ffff56f3ffff60f3ffff78f3ffff2ef5ffff7cf6ffffa4f6ffff82f7ffffb6f7ffffdaf7ffffdcf7ffffde600000f2600000
+      m_ExpandedIDs: 1eb1fbff76c6fbff6cdafbff6edafbff14e5ffff72e5ffff64f2fffff8f2ffff02f3ffff52f3ffff56f3ffff78f3ffff90f4ffff2ef5ffff7cf6ffffa4f6ffff82f7ffffb6f7ffffdaf7ffffdcf7ffffde600000f2600000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -502,9 +502,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -169.64731, y: 6.738326, z: 22.778767}
+    m_Target: {x: -144.97314, y: 8.988333, z: 24.424484}
     speed: 2
-    m_Value: {x: -169.64731, y: 6.738326, z: 22.778767}
+    m_Value: {x: -144.97314, y: 8.988333, z: 24.424484}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -551,13 +551,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.34999907, y: 0.06596343, z: -0.02471588, w: 0.9341001}
+    m_Target: {x: -0.40286228, y: 0.159147, z: -0.071440555, w: -0.89853203}
     speed: 2
-    m_Value: {x: 0.34999833, y: 0.06596329, z: -0.024715828, w: 0.93409806}
+    m_Value: {x: -0.40284428, y: 0.15913989, z: -0.07143736, w: -0.89849186}
   m_Size:
-    m_Target: 17.85591
+    m_Target: 23.583757
     speed: 2
-    m_Value: 17.85591
+    m_Value: 23.583757
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -648,9 +648,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 5d7c43fdde653854ab159bb3853baa7c, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 8473ec80cc2abe04e8743f7ba41068c0, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 2065972365846185900, guid: 5d7c43fdde653854ab159bb3853baa7c, type: 2}
+  - m_Target: {fileID: -8503909503294311067, guid: 8473ec80cc2abe04e8743f7ba41068c0, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -756,21 +756,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Script
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\GitHub\proyectofinal\Gravity Cat
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 147.57144}
-    m_SelectedIDs: 9c690000
-    m_LastClickedID: 27036
+    scrollPos: {x: 0, y: 27.571442}
+    m_SelectedIDs: 9a690000
+    m_LastClickedID: 27034
     m_ExpandedIDs: 00000000e2680000e4680000e6680000e868000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -851,7 +851,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 60}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
@@ -902,8 +902,8 @@ MonoBehaviour:
     y: 0
     width: 309.71436
     height: 297.42856
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -970,7 +970,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 216
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
