@@ -21,7 +21,7 @@ public class Enemigo : MonoBehaviour
     void ChequearDistancia(){
         float dist = Vector3.Distance(posJugador.position , transform.position);
         Debug.Log(dist);
-        if (dist < maxDistancia){
+        if (dist > maxDistancia){
             speed = 0;
             anim.SetBool("walk",false);
         } else {

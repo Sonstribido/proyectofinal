@@ -5,12 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Danador
+  - Puertas
+  - Muebles
+  - Walls
   - rata
+  - Levelend
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Camera Limit
   - Water
   - UI
   - 

@@ -145,7 +145,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5af49b64cf47548af06842dd72ba9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  posNivel2: {x: 0, y: 0, z: 0}
+  speed: 8
   anim: {fileID: 8430294377590112429}
-  forceAmount: 0
+  forceAmount: 2
   rb: {fileID: 0}
+  principioNivel: {fileID: 0}
+  rotateSpeed: 0.5
+  acel: 3
+  desacel: 1
+  jumping: 0
+  jumpCd: 3
