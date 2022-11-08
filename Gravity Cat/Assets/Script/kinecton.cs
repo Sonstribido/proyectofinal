@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KinectOn : MonoBehaviour
+public class kinecton : MonoBehaviour
 {
     Rigidbody rb;
 

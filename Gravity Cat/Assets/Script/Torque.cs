@@ -7,9 +7,9 @@ public class Torque : MonoBehaviour
    
     public float forceAmount;
     public Rigidbody rb;
-
+    
    
-    void Torquen()
+    public void Torquen()
     {
         rb.AddTorque(Vector3.back * forceAmount);
     }
@@ -21,9 +21,9 @@ public class Torque : MonoBehaviour
 
 
         /*
-         Torquen();
+        Torquen();
         float movX = 5f;
-         float movY = 5f;
+        float movY = 5f;
          float h = movX  * forceAmount * Time.deltaTime; 
          float v = movY * forceAmount * Time.deltaTime; 
 
