@@ -11,7 +11,7 @@ public class Torque : MonoBehaviour
    
     public void Torquen()
     {
-        rb.AddTorque(new Vector3(1,0,0) * forceAmount);
+        rb.AddTorque(new Vector3(-1,0,0) * forceAmount);
     }
     
     void FixedUpdate()

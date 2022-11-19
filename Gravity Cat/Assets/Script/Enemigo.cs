@@ -1,4 +1,5 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemigo : MonoBehaviour
@@ -7,10 +8,10 @@ public class Enemigo : MonoBehaviour
     public float speed = 2f;
     public float maxDistancia = 20f;
     public Animator anim;
-
+    public List<Transform> spawnEnemigo = new List<Transform> ();
     void Start()
     {
-        
+        transform.position = spawnEnemigo[Random.Range(0,spawnEnemigo.Count)].position;
     }
     void Update()
     {
@@ -21,11 +22,11 @@ public class Enemigo : MonoBehaviour
     void ChequearDistancia(){
         float dist = Vector3.Distance(posJugador.position , transform.position);
         Debug.Log(dist);
-        if (dist < maxDistancia){
-            speed = 0;
+        if (dist > maxDistancia){
+            speed = 2;
             anim.SetBool("walk",false);
         } else {
-            speed = 2;
+            speed = 4;
             
         };  
     }
@@ -36,6 +37,11 @@ public class Enemigo : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, posJugador.position, speed * Time.deltaTime);
         anim.SetBool("walk",true);
+    }
+    void OnTriggerEnter(Collider col) {
+        if (col.gameObject.CompareTag("Player")) {
+        };
+
     }
 }
 

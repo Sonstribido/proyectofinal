@@ -943,9 +943,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.33075678
-  m_Height: 1.0460972
+  m_Height: 1.2606428
   m_Direction: 1
-  m_Center: {x: 0, y: 0.72786933, z: -0.056471705}
+  m_Center: {x: 0, y: 0.6205965, z: -0.056471705}
 --- !u!95 &5048528869315364516
 Animator:
   serializedVersion: 4
@@ -978,7 +978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2fc7e832fa1c140bfb29f77ad38aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posJugador: {fileID: 0}
+  posJugador: {fileID: 8062562632936889164, guid: 33d6289e5f8b4294dbead02f5ad29103, type: 3}
   speed: 4
   maxDistancia: 0
   anim: {fileID: 5048528869315364516}
