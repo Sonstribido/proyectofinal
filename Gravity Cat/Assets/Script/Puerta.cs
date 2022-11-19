@@ -21,8 +21,7 @@ void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.CompareTag("Player") && tpd == false)
         {
-           
-            col.transform.position = tpPoint.position;
+            Instantiate(Personaje2_prefab, tpPoint.position, tpPoint.rotation);
             tpd = true;
             Debug.Log("Tepeado");
         } 
