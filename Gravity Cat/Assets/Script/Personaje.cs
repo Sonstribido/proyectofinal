@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Personaje : MonoBehaviour
 {
-    Vector3 posInicial;
+   
     public Transform tp1;
     public Transform tp2;
     public Transform inicio;
@@ -22,11 +22,28 @@ public class Personaje : MonoBehaviour
     public bool jumping = false;
     public float jumpCd = 3;
     Stack quesos = new Stack();
+
+    private void ShootRay()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100))
+
+        {
+
+            Debug.Log(hit.transform.name);
+
+            Debug.Log("hit");
+
+        };
+    }
     void Respawn()
     {
         if (lvl1 == true)
         {
-            transform.position = posInicial;
+            transform.position = inicio.position;
         }
         else if (lvl2 == true) { transform.position = tp1.position; }
         else if (lvl3 == true)
@@ -37,12 +54,14 @@ public class Personaje : MonoBehaviour
     }
     void RespawnFinal()
     {
-        transform.position = posInicial;
+        transform.position = inicio.position;
+        lvl1 = true;
+
     }
 
     void CheckRotation()
     {
-        var rotation = Input.GetAxisRaw("Mouse X") * rotateSpeed * Time.deltaTime * 500;
+        var rotation = Input.GetAxisRaw("Mouse X") * rotateSpeed * Time.deltaTime * 10000;
 
         transform.Rotate(0f, rotation, 0f);
     }
@@ -126,17 +145,16 @@ public class Personaje : MonoBehaviour
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Confined; // keep confined in the game window
 
-
-    }
-
-    void FixedUpdate()
-    {
-
+        Cursor.lockState = CursorLockMode.Locked; // keep confined to center of screen
 
     }
+
+    
     void Update()
     {
+        ShootRay();
         if (Input.GetMouseButtonDown(1) && HUDGame.cantQuesito > 0)
         {
             quesos.Pop();

@@ -1,10 +1,11 @@
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HUDGame : MonoBehaviour
 {
- 
+   
     public TextMeshProUGUI textoQuesitos;
     public TextMeshProUGUI textoRat;
     public TextMeshProUGUI textoSpawn;
@@ -17,7 +18,13 @@ public class HUDGame : MonoBehaviour
     }
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            
+            SceneManager.LoadScene(0);
+
+        }
+
         if (splashTime <= 0)
         {
             textoRat.gameObject.SetActive(false);
