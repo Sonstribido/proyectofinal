@@ -10,7 +10,7 @@ scopes = {
 	"last_search.DA949528" = "canvas"
 	"OpenInspectorPreview.DA949528" = "0"
 	"currentGroup.DA949528" = "all"
-	"last_search.DD5CDD96" = "ref:Assets/Script/kinecton1.cs"
+	"last_search.DD5CDD96" = "ref:Assets/3DModelas/RawWoodenFurnitureFree/Models/BedSingle01empty.fbx"
 	"OpenInspectorPreview.DD5CDD96" = "0"
 	"currentGroup.DD5CDD96" = "scene"
 }
@@ -59,6 +59,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"ref:Assets/3DModelas/RawWoodenFurnitureFree/Models/BedSingle01empty.fbx"
 	"ref:Assets/Script/kinecton1.cs"
 	"c"
 ]
