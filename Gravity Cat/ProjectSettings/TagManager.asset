@@ -10,6 +10,8 @@ TagManager:
   - Walls
   - rata
   - Levelend
+  - Cheese
+  - CheeseTrap
   layers:
   - Default
   - TransparentFX
