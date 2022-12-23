@@ -36,22 +36,7 @@ public class Personaje : MonoBehaviour
 
         }
     }    
-    private void ShootRay()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, 100))
-
-        {
-
-            Debug.Log(hit.transform.name);
-
-            Debug.Log("hit");
-
-        };
-    }
+   
     void Respawn()
     {
         if (lvl1 == true)
@@ -180,16 +165,10 @@ public class Personaje : MonoBehaviour
             }
         }
     }
-    void Update()
+
+    void Jump()
     {
-        PonerQuesito();
-        Pause();
-        ShootRay();
-        if (Input.GetMouseButtonDown(1) && HUDGame.cantQuesito > 0)
-        {
-            quesos.Pop();
-        };
-            if (Input.GetKeyDown(KeyCode.Space) && jumping == false)
+        if (Input.GetKeyDown(KeyCode.Space) && jumping == false)
         {
             anim.SetBool("jump", true);
             rb.AddForce(new Vector3(0, forceAmount * 5, 0), ForceMode.Impulse);
@@ -201,6 +180,7 @@ public class Personaje : MonoBehaviour
         else
         {
             anim.SetBool("jump", false);
+
         };
         if (jumping == true)
         {
@@ -209,14 +189,26 @@ public class Personaje : MonoBehaviour
         if (jumpCd <= 0)
         {
             jumping = false;
-        };
-        MovimientoJugador();
-        CheckRotation();
+        }
+    }
 
+    void FallRespawn ()
+    {
         if (transform.position.y < -20)
         {
             Respawn();
         }
+
+    }
+    void Update()
+    {
+        PonerQuesito();
+        Pause();
+        Jump();
+        MovimientoJugador();
+        CheckRotation();
+        FallRespawn();
+
 
 
 

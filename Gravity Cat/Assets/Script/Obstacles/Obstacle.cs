@@ -9,36 +9,37 @@ public class Obstacle : MonoBehaviour
     public float timeSpawn;
     public float timeNextSpawn;
     public bool spawning;
-    int rndZ;
     public float forceAmount;
     public Rigidbody rb;
-
+    
 
     public void Torquen()
-    {
+    {   
         rb.AddTorque(new Vector3(-1, 0, 0) * forceAmount);
     }
 
-   public void TorquenAlt()
-    { float movX = 5f;
-        float movY = 5f;
-         float h = movX  * forceAmount * Time.deltaTime; 
-         float v = movY * forceAmount * Time.deltaTime; 
-
-         rb.AddTorque(transform.up * v);
-         rb.AddTorque(transform.right * h);
+   protected virtual void TorquenAlt()
+    {
+        float movX = 0f;
+        float movY = 0f;
+        float movZ = 0f;
+        float forback = movX  * forceAmount * Time.deltaTime; 
+        float gravity = movY * forceAmount * Time.deltaTime;
+        float rightleft = movZ * forceAmount * Time.deltaTime;
+        rb.AddTorque(new Vector3(forback, gravity, rightleft) * forceAmount);
+        
     }
     public void ResetTimer()
     {
         timeNextSpawn = timeSpawn;
     }
-    public void SpawnObstacle()
+    public void timedSpawn()
     {
 
         if (spawning == true && timeNextSpawn <= 0)
         {
-            rndZ = Random.Range(1, 1);
-            Instantiate(obstaclePrefab, spawnPoint.position += new Vector3(0, 0, rndZ), spawnPoint.rotation);
+            
+            Instantiate(obstaclePrefab, spawnPoint.position, spawnPoint.rotation);
 
             ResetTimer();
 
