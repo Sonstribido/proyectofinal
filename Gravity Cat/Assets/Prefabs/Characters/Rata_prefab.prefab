@@ -914,7 +914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4721253722328364524
 Transform:
   m_ObjectHideFlags: 0
@@ -983,9 +983,11 @@ MonoBehaviour:
   maxDistancia: 100
   anim: {fileID: 5048528869315364516}
   sightDist: 30
+  prefab: {fileID: 0}
   name: 
   eatingTime: 4
-  Cheese: {fileID: 1010779219342674, guid: 70619aa8db51d22459955fac1ffe0d10, type: 3}
+  posQuesito: {fileID: 0}
+  distracted: 0
 --- !u!54 &4290626819024543953
 Rigidbody:
   m_ObjectHideFlags: 0

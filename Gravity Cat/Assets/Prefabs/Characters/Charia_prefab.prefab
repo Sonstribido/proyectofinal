@@ -39,36 +39,64 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 738006846, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.380016
+      objectReference: {fileID: 0}
+    - target: {fileID: 738006846, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1699996
+      value: -1.1699989
+      objectReference: {fileID: 0}
+    - target: {fileID: 738006846, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.05000211
+      objectReference: {fileID: 0}
+    - target: {fileID: 738006846, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.69813645
       objectReference: {fileID: 0}
     - target: {fileID: 738006846, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.018803112
+      value: 0.018803254
+      objectReference: {fileID: 0}
+    - target: {fileID: 738006846, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7154584
       objectReference: {fileID: 0}
     - target: {fileID: 738006846, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.01926959
+      value: -0.019269753
       objectReference: {fileID: 0}
     - target: {fileID: 1225585333, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_ChildCameras.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2013726517, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.7700136
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013726517, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.7300005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013726517, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00000083446525
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013726517, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.66208667
+      value: 0.7023459
       objectReference: {fileID: 0}
     - target: {fileID: 2013726517, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.24827625
+      value: 0.081915624
       objectReference: {fileID: 0}
     - target: {fileID: 2013726517, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6620869
+      value: 0.702346
       objectReference: {fileID: 0}
     - target: {fileID: 2013726517, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.24827628
+      value: -0.081915595
       objectReference: {fileID: 0}
     - target: {fileID: 1203352384777665149, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_Name
@@ -119,9 +147,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8430294377590112595, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
+      propertyPath: speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430294377590112595, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
+      propertyPath: jumpCd
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430294377590112595, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: Quesito
       value: 
       objectReference: {fileID: 1010779219342674, guid: 70619aa8db51d22459955fac1ffe0d10, type: 3}
+    - target: {fileID: 8430294377590112595, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
+      propertyPath: forceAmount
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8430294377590112595, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: poneQuesito
       value: 

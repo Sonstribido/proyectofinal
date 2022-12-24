@@ -12,6 +12,8 @@ TagManager:
   - Levelend
   - Cheese
   - CheeseTrap
+  - Key
+  - KeyPuerta
   layers:
   - Default
   - TransparentFX

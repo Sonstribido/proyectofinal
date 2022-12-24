@@ -10,7 +10,7 @@ public class Personaje : MonoBehaviour
     public Transform inicio;
     public float speed = 2f;
     public Animator anim;
-    public float forceAmount;
+    public float forceAmount = 3f;
     public Rigidbody rb;
     public bool lvl1 = true;
     public bool lvl2 = false;
@@ -108,14 +108,16 @@ public class Personaje : MonoBehaviour
 
         }
 
-        if (col.gameObject.CompareTag("Puertas") && lvl1 == true)
+        
+
+        if (col.gameObject.CompareTag("Puertas") && lvl1 == true && HUDGame.gotTutorialKey == true)
         {
             transform.position = tp1.position;
             lvl2 = true;
             lvl1 = false;
             HUDGame.spawnInfo += 1;
         }
-        else if ((col.gameObject.CompareTag("Puertas") && lvl2 == true))
+        else if ((col.gameObject.CompareTag("Puertas") && lvl2 == true && HUDGame.gotRoomKey == true))
         {
             transform.position = tp2.position;
             lvl3 = true;
@@ -139,10 +141,27 @@ public class Personaje : MonoBehaviour
             HUDGame.cantQuesito++;
 
         }
+        if (col.gameObject.CompareTag("Key") && HUDGame.gotTutorialKey == false)
+        {
+            Destroy(col.transform.gameObject);
+            HUDGame.gotTutorialKey = true;
+
+        }
+        else if (col.gameObject.CompareTag("Key") && HUDGame.gotTutorialKey == true)
+        {
+            Destroy(col.transform.gameObject);
+            HUDGame.gotGreenKey = true;
+        }
+        else if (col.gameObject.CompareTag("Key") && HUDGame.gotGreenKey == true)
+        {
+            Destroy(col.transform.gameObject);
+            HUDGame.gotRoomKey = true;
+        }
 
     }
 
 
+    
     void Start()
     {
         Cursor.lockState = CursorLockMode.Confined; // keep confined in the game window
@@ -173,7 +192,7 @@ public class Personaje : MonoBehaviour
             anim.SetBool("jump", true);
             rb.AddForce(new Vector3(0, forceAmount * 5, 0), ForceMode.Impulse);
             jumping = true;
-            jumpCd = 2;
+            jumpCd = 1.5f;
 
 
         }
@@ -200,6 +219,8 @@ public class Personaje : MonoBehaviour
         }
 
     }
+
+    
     void Update()
     {
         PonerQuesito();

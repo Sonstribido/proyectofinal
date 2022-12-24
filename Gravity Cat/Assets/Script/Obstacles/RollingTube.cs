@@ -12,7 +12,7 @@ public class RollingTube : Obstacle
 
     protected override void TorquenAlt()
     {
-        float movX = 2f;
+        float movX = -2f;
         float movY = 0f;
         float movZ = 0f;
         float forback = movX * forceAmount * Time.deltaTime;

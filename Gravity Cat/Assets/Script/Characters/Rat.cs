@@ -61,19 +61,30 @@ public class Rat : MonoBehaviour
             
 
         }
+         else if (col.gameObject.CompareTag("Player"))
+        {           
+            transform.LookAt(col.transform.position);
+            transform.position = Vector3.MoveTowards(transform.position, col.transform.position, speed * Time.deltaTime);
+            anim.SetBool("walk", true);
+
+
+        }
     }
     void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("CheeseTrap"))
         {
-           
+            if (other.transform.position == transform.position)
+            {
+                eatingTime -= Time.deltaTime;
+            };
             transform.LookAt(other.transform.position);
             transform.position = Vector3.MoveTowards(transform.position, other.transform.position, speed * Time.deltaTime);
-        }
-        if (other.transform.position == transform.position)
+        } else if (other.gameObject.CompareTag("Player"))
         {
-            eatingTime -= Time.deltaTime;
-        }
+            posJugador = other.transform;
+        };
+       
         if (eatingTime <= 0)
             {
 
@@ -83,7 +94,7 @@ public class Rat : MonoBehaviour
 
             
 
-        }
+        };
             
     }
 
