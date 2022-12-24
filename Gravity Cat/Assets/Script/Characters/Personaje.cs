@@ -152,14 +152,13 @@ public class Personaje : MonoBehaviour
             Destroy(col.transform.gameObject);
             HUDGame.gotGreenKey = true;
         }
-        else if (col.gameObject.CompareTag("Key") && HUDGame.gotGreenKey == true)
+        else if (col.gameObject.CompareTag("Key") && HUDGame.gotTutorialKey == true && HUDGame.gotGreenKey == true)
         {
             Destroy(col.transform.gameObject);
             HUDGame.gotRoomKey = true;
         }
 
     }
-
 
     
     void Start()
