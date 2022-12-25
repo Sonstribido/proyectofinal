@@ -23,7 +23,7 @@ public class Rat : MonoBehaviour
     }
     protected void SeguirAlJugador()
     {
-        transform.position = Vector3.MoveTowards(transform.position, posJugador.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, posJugador.position, speed * Time.deltaTime); 
         anim.SetBool("walk", true);
     }
     protected void SeguirAlQuesito()
@@ -72,14 +72,21 @@ public class Rat : MonoBehaviour
     {
         if (other.gameObject.CompareTag("CheeseTrap"))
         {
-            if (other.gameObject.CompareTag("Player"))
-            {
-                posJugador = other.transform;
-            };
+            
             if (other.transform.position == transform.position)
             {
+                anim.SetBool("walk", false);
                 eatingTime -= Time.deltaTime;
-            };
+            }
+            else if (other.gameObject.CompareTag("Player"))
+            {
+                transform.LookAt(other.transform.position);
+                transform.position = Vector3.MoveTowards(transform.position, other.transform.position, speed * Time.deltaTime);
+                anim.SetBool("walk", true);
+                 
+
+            }
+            ;
             transform.LookAt(other.transform.position);
             transform.position = Vector3.MoveTowards(transform.position, other.transform.position, speed * Time.deltaTime);
         };
@@ -87,7 +94,7 @@ public class Rat : MonoBehaviour
         {
             posJugador = other.transform;
         };
-       
+
         if (eatingTime <= 0)
             {
 

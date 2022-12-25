@@ -65,8 +65,11 @@ public class HUDGame : MonoBehaviour
         {
 
             keyInfo.text = "Good, now the door, there are more keys";
-            splashTime = 4f;           
             
+            if (splashTime <= 0 && gotTutorialKey == true)
+            {
+                keyInfo.gameObject.SetActive(false);
+            }
         };
         
 
@@ -75,7 +78,7 @@ public class HUDGame : MonoBehaviour
             keyInfo.text = "A Green key! They are good for breaking odd colored walls!";
             keyInfo.gameObject.SetActive(true);
             splashTime -= Time.deltaTime;
-            if (splashTime <= 0)
+            if (splashTime <= 0 && gotGreenKey == true)
             {
                 keyInfo.gameObject.SetActive(false);
             };
