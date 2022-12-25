@@ -97,14 +97,14 @@ public class Rat : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision collision)
-        {
+    {
         if (collision.gameObject.CompareTag("CheeseTrap"))
-        {                      
-           
+        {
+
 
         }
     }
-        void Update()
+    void Update()
         {
             BuscarComida();
 

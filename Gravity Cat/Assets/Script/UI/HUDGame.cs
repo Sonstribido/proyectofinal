@@ -20,6 +20,7 @@ public class HUDGame : MonoBehaviour
     public static bool gotFirstKey = false;
     public static bool gotSecondKey = false;
     public static bool gotFinalKey = false;
+    public static bool finalWin = false;
     void Start()
     {
         
@@ -27,7 +28,12 @@ public class HUDGame : MonoBehaviour
 
 
     void Update()
-    {   if (Time.timeScale == 0)
+    {   if (finalWin == true)
+        {
+            SceneManager.UnloadScene(1);
+            SceneManager.LoadScene(2);
+        }
+        if (Time.timeScale == 0)
         {
             textoPause.gameObject.SetActive(true);
         } else

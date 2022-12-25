@@ -119,7 +119,7 @@ public class Personaje : MonoBehaviour
         }
         else if ((col.gameObject.CompareTag("Puertas") && lvl2 == true && HUDGame.gotRoomKey == true))
         {
-            transform.position = tp2.transform.position;
+            transform.position = tp2.position;
             lvl3 = true;
             lvl2 = false;
             HUDGame.spawnInfo += 1;
@@ -139,6 +139,12 @@ public class Personaje : MonoBehaviour
             Destroy (col.transform.gameObject);
             quesos.Push("quesito");
             HUDGame.cantQuesito++;
+
+        }
+        if (col.gameObject.CompareTag("Puertas") && HUDGame.gotFirstKey == true && HUDGame.gotSecondKey == true && HUDGame.gotFinalKey == true)
+
+        {
+            HUDGame.finalWin = true;
 
         };
         if (col.gameObject.CompareTag("Key")) { 
@@ -163,20 +169,17 @@ public class Personaje : MonoBehaviour
             Destroy(col.transform.gameObject);
             HUDGame.gotFirstKey = true;
         };
-        if (col.gameObject.CompareTag("SecondKey") && HUDGame.gotFirstKey == true)
+        if (col.gameObject.CompareTag("SecondKey"))
         {
             Destroy(col.transform.gameObject);
             HUDGame.gotSecondKey = true;
         };
-        if (col.gameObject.CompareTag("FinalKey") && HUDGame.gotSecondKey == true)
+        if (col.gameObject.CompareTag("FinalKey"))
         {
             Destroy(col.transform.gameObject);
             HUDGame.gotFinalKey = true;
         };  
-        if (HUDGame.gotFinalKey == true)
-        {
-
-        };
+        
 
     }
 
