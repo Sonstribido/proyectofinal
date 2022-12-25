@@ -21,19 +21,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738006846, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6694311
+      value: 0.66943103
       objectReference: {fileID: 0}
     - target: {fileID: 738006846, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.19447923
+      value: -0.19447936
       objectReference: {fileID: 0}
     - target: {fileID: 738006846, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.68850005
+      value: 0.6885
       objectReference: {fileID: 0}
     - target: {fileID: 738006846, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.20001909
+      value: 0.20001917
       objectReference: {fileID: 0}
     - target: {fileID: 1225585333, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LookAt
@@ -57,19 +57,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2013726517, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7065475
+      value: 0.70654744
       objectReference: {fileID: 0}
     - target: {fileID: 2013726517, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.028117537
+      value: 0.028117528
       objectReference: {fileID: 0}
     - target: {fileID: 2013726517, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7065476
+      value: 0.7065477
       objectReference: {fileID: 0}
     - target: {fileID: 2013726517, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0281175
+      value: -0.028117491
       objectReference: {fileID: 0}
     - target: {fileID: 1203352384777665149, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: m_Name
@@ -124,17 +124,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8430294377590112595, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
+      propertyPath: acel
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430294377590112595, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: speed
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8430294377590112595, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: jumpCd
-      value: 1.5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8430294377590112595, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: Quesito
       value: 
       objectReference: {fileID: 1010779219342674, guid: 70619aa8db51d22459955fac1ffe0d10, type: 3}
+    - target: {fileID: 8430294377590112595, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
+      propertyPath: desacel
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8430294377590112595, guid: b013e56b00d88c6499aecd5bae3e8da4, type: 3}
       propertyPath: forceAmount
       value: 4
