@@ -17,6 +17,9 @@ public class HUDGame : MonoBehaviour
     public static bool gotTutorialKey = false;
     public static bool gotGreenKey = false;
     public static bool gotRoomKey = false;
+    public static bool gotFirstKey = false;
+    public static bool gotSecondKey = false;
+    public static bool gotFinalKey = false;
     void Start()
     {
         

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Rat : MonoBehaviour
 {
 
-    public Transform posJugador;
+    private Transform posJugador;
     public float speed = 4f;
     public float maxDistancia = 20f;
     public Animator anim;
@@ -34,10 +34,8 @@ public class Rat : MonoBehaviour
 
     protected void BuscarComida()
     {
-        float dist = Vector3.Distance(posJugador.position, transform.position);
-
-
-        if (dist < maxDistancia && distracted == false)
+      
+        if (distracted == false)
         {
             LookAtPlayer();
             SeguirAlJugador();

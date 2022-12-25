@@ -8,7 +8,7 @@ public class kinecton : MonoBehaviour
     public float fadeTimer = 5f;
 
     
-    // Start is called before the first frame update
+    // Start is called beforevvvdwsa the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
