@@ -91,7 +91,7 @@ public class Personaje : MonoBehaviour
         if (correr && vel < 1f)
         {
             vel += Time.deltaTime * acel;
-            speed =6;
+            speed =12;
         }
         if (!correr && vel > 0.5f)
         {
