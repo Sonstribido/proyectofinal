@@ -128,9 +128,7 @@ public class Personaje : MonoBehaviour
 
         if (col.gameObject.CompareTag("rata"))
         {
-            RespawnFinal();
-            HUDGame.spawnInfo = 1;
-
+            Respawn();
         }
     }
 
