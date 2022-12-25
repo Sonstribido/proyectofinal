@@ -63,7 +63,8 @@ public class HUDGame : MonoBehaviour
 
         if (gotTutorialKey == true)
         {
-
+            textoRat.gameObject.SetActive(false);
+            keyInfo.gameObject.SetActive(true);
             keyInfo.text = "Good, now the door, there are more keys";
             
             if (splashTime <= 0 && gotTutorialKey == true)
