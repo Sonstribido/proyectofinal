@@ -30,7 +30,7 @@ public class HUDGame : MonoBehaviour
     void Update()
     {   if (finalWin == true)
         {
-            SceneManager.UnloadScene(1);
+            
             SceneManager.LoadScene(2);
         }
         if (Time.timeScale == 0)

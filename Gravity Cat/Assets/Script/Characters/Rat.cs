@@ -72,13 +72,18 @@ public class Rat : MonoBehaviour
     {
         if (other.gameObject.CompareTag("CheeseTrap"))
         {
+            if (other.gameObject.CompareTag("Player"))
+            {
+                posJugador = other.transform;
+            };
             if (other.transform.position == transform.position)
             {
                 eatingTime -= Time.deltaTime;
             };
             transform.LookAt(other.transform.position);
             transform.position = Vector3.MoveTowards(transform.position, other.transform.position, speed * Time.deltaTime);
-        } else if (other.gameObject.CompareTag("Player"))
+        };
+        if (other.gameObject.CompareTag("Player"))
         {
             posJugador = other.transform;
         };

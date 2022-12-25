@@ -135,6 +135,7 @@ public class Personaje : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider col) {
+
         if (col.gameObject.CompareTag("Cheese")) {
             Destroy (col.transform.gameObject);
             quesos.Push("quesito");
